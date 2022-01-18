@@ -6,5 +6,4 @@ print(b)
 
 name = input("Как вас зовут? ")
 age = int(input("Сколько Вам лет? "))
-print("Имя: ", name;
-"Возраст: ", age)
+print("Имя: ", name; "Возраст: ", age)
