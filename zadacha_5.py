@@ -5,16 +5,17 @@
 
 vyruchka = float(input("Введите сумму выручки "))
 izderzhki = float(input("Введите сумму издержек "))
+pribyl = vyruchka - izderzhki
 
 if vyruchka > izderzhki:
-    pribyl = vyruchka - izderzhki
     rentabelnost = pribyl / vyruchka
-    print("Фирма работает с прибылью. Рентабельность составляет: ", rentabelnost)
+    print("Фирма работает с прибылью: ", pribyl, "Рентабельность составляет: ", rentabelnost)
     sotrudniki = int(input("Введите количество сотрудников фирмы: "))
     pribyl_na_1_sotrudnika = pribyl / sotrudniki
     print("Прибыль на одного сотрудника составляет: ", pribyl_na_1_sotrudnika)
 
 elif vyruchka < izderzhki:
-    print("Фирма работает в убыток")
+    print("Фирма работает в убыток: ", pribyl)
+    
 else:
     print("Фирма работает в ноль") # выручка и издержки равны
