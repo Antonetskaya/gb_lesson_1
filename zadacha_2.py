@@ -3,12 +3,7 @@
 seconds_polzovatel = int(input("Время в секундах: "))
 
 hours = seconds_polzovatel // 3600
-print(hours)  # для проверки
+minutes = (seconds_polzovatel % 3600) // 60
+seconds = (seconds_polzovatel % 3600) % 60
 
-minutes = int(seconds_polzovatel % 3600 / 60)
-print(minutes)  # для проверки
-
-seconds = int(seconds_polzovatel % 60)
-print(seconds) # для проверки
-
-print(hours, ":", minutes, ":", seconds)
+print(f"{hours:>02}:{minutes:>02}:{seconds:>02}")
